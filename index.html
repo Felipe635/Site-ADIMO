@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/estilo.css">
+    <link rel="stylesheet" href="css/fav.css">
     <title>Imóveis ADIMO</title>
 </head>
 <body>
@@ -15,7 +16,6 @@
                 <li class="li-menu"><a href="index.html" class="itens">Home</a></li>
                 <li class="li-menu"><a href="sobre.html" class="itens">Sobre Nós</a></li>
                 <li class="li-menu"><a href="login.html" class="itens">Login</a></li>
-                <li class="li-menu"><a href="" class="itens">Cadastro</a></li>
             </ul>
         </nav>
     </header>
@@ -29,75 +29,84 @@
     <ol>
         <!-- primeiro produto -->
         <li>
-            <a href="produto.html">
                 <figure>
                     <img src="img/casa1.jpg" alt="miniatura1" class="img-card"/>
                     <figcaption>Casa Genebra 24m² - Bela Vista à venda<br>R$ 358.015</figcaption>
-                    <input type="submit" value="Adicionar aos favoritos" class="btn-card">
+                    <input type="submit" value="Adicionar aos favoritos" class="btn-card" onclick="addFav2()"/>
                 </figure>
-                
-            </a>
         </li>
         
         <li>
-            <a href="produto.html">
                 <figure>
                     <img src="img/casa2.jpg" alt="miniatura2" class="img-card"/>
                     <figcaption>Sobrado com 3 Quartos à venda, 124m² - Vila Santa Isabel <br>R$ 245.000</figcaption>
-                    <input type="submit" value="Adicionar aos favoritos" class="btn-card">
+                    <input type="submit" value="Adicionar aos favoritos" class="btn-card" onclick="addFav3()">
                 </figure>
-                
-            </a>
         </li>
         
         <li>
-            <a href="produto.html">
                 <figure>
                     <img src="img/casa3.jpg" alt="miniatura3" class="img-card"/>
                     <figcaption>Sobrado com 3 Quartos à venda, 120m² - Lapa <br>R$ 275.000</figcaption>
                     <input type="submit" value="Adicionar aos favoritos" class="btn-card">
                 </figure>
-                
-            </a>
         </li>
     </ol>
     <ol>
         
         <li>
-            <a href="produto.html">
                 <figure>
                     <img src="img/casa4.jpg" alt="miniatura4" class="img-card"/>
                     <figcaption>Casa com 3 Quartos à venda, 150m² - Vila Ré <br>R$ 350.000</figcaption>
                     <input type="submit" value="Adicionar aos favoritos" class="btn-card">
                 </figure>
-                
-            </a>
         </li>
         
         <li>
-            <a href="produto.html">
                 <figure>
                     <img src="img/casa5.jpg" alt="miniatura5" class="img-card"/>
                     <figcaption>Apartamento com 3 Quartos à venda, 96m² - Freguesia do Ó <br>R$ 680.000</figcaption>
                     <input type="submit" value="Adicionar aos favoritos" class="btn-card">
                 </figure>
-                
-            </a>
         </li>
         
         <li>
-            <a href="produto.html">
                 <figure>
                     <img src="img/casa6.jpg" alt="miniatura6" class="img-card"/>
                     <figcaption>Conjunto Comercial / Sala à venda, 38m² - Ibirapuera <br>R$ 598.000</figcaption>
-                    <input type="submit" value="Adicionar aos favoritos" class="btn-card">
+                    <input type="submit" value="Adicionar aos favoritos" class="btn-card" />
                 </figure>
-                
-            </a>
         </li>
     </ol>
     </div>
 </article>
+
+<h2>Favoritos</h2>
+    <div class="tabela">
+        <table border="1">
+            <tr class="linha1">
+            <td align="center">Tipo</td>
+            <td align="center">Características</td>
+            <td align="center">Local</td>
+            <td align="center">Tamanho</td>
+            <td align="center">Preço</td>
+            </tr>
+            <tr class="linha2-off" id="linha2">
+                <td align="center">Casa</td>
+                <td align="center">Genebra</td>
+                <td align="center">Bela Vista</td>
+                <td align="center">24m²</td>
+                <td align="center">R$ 358.015</td>
+                </tr>
+                <tr class="linha3-off" id="linha3">
+                    <td align="center">Sobrado</td>
+                    <td align="center">3 Quartos</td>
+                    <td align="center">Vila Santa Isabel</td>
+                    <td align="center">124m²</td>
+                    <td align="center">R$ 245.000</td>
+                    </tr>
+        </table>
+    </div>
 
     <footer>
         <div class="rodape">
@@ -110,6 +119,8 @@
         </ul>
         </div>
     </footer>
+
+    <script src="script.js"></script>
 
 </body>
 </html>
