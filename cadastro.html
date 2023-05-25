@@ -14,7 +14,7 @@
         <nav class="container">
             <img src="img/logo.png" alt="" class="logo">
             <ul class="menu">
-                <li class="li-menu"><a href="index.html" class="itens">Home</a></li>
+                <li class="li-menu"><a href="adm.html" class="itens">Home</a></li>
                 <li class="li-menu"><a href="sobre.html" class="itens">Sobre Nós</a></li>
                 <li class="li-menu"><a href="login.html" class="itens">Login</a></li>
             </ul>
@@ -23,18 +23,18 @@
     
     <div class="container-login">
         <form method="POST" class="formLogin">
-            <h1>Cadastro</h1>
+            <h1>Cadastrar Cliente</h1>
             <label for="nome">Nome</label>
-            <input type="text" placeholder="Digite o nome" autofocus="true" />
+            <input type="text" placeholder="Digite o nome" autofocus="true" required/>
             <label for="sobrenome">Sobrenome</label>
-            <input type="text" placeholder="Digite o sobrenome" autofocus="true" />
+            <input type="text" placeholder="Digite o sobrenome" autofocus="true" required/>
             <label for="cpf">CPF</label>
-            <input type="number" placeholder="Digite o CPF" autofocus="true" />
+            <input type="number" placeholder="Digite o CPF" autofocus="true" required/>
             <label for="telefone">Telefone</label>
-            <input type="number" placeholder="Digite o telefone" autofocus="true" />
+            <input type="number" placeholder="Digite o telefone" autofocus="true" required/>
             <label for="email">E-mail</label>
-            <input type="email" placeholder="Digite o e-mail" autofocus="true" id="email" />
-            <input type="submit" value="Cadastrar" class="btn" />
+            <input type="email" placeholder="Digite o e-mail" autofocus="true" id="email" required/>
+            <input type="submit" value="Cadastrar" class="btn" onclick="cadastrar(); return false" />
         </form>
     </div>
 

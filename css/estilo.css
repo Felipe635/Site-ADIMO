@@ -49,13 +49,16 @@ body{
 }
 
 .cards{
-    margin-right: auto;
-    margin-left: auto;
     margin-top: 20px;
     padding: 10px;
-    width: 70%;
     border-radius: 4px;
    /* box-shadow: inset 1px 1px 4px #999; /*inset: coloca a borda do lado de dentro do objeto*/
+}
+
+ol{
+    width: 60%;
+    margin-right: auto;
+    margin-left: auto;
 }
 
 .cards li {
@@ -131,7 +134,7 @@ h2{
 }
 
 .linha1{
-    background-color: #6f6f6f;
+    background-color: #ccc;
 }
 
 /*RODAPE*/
@@ -170,3 +173,22 @@ h2{
     background-image: url(../img/instagram.png);
 }
 
+@media screen and (max-width: 610px) {
+    .menu{
+        display: block;
+        margin-top: 20px;
+    }
+
+    .li-menu{
+        text-align: center;
+        padding: 5px;
+    }
+
+    .tabela table{
+        box-shadow: 0px 0px 0px;
+    }
+
+
+
+   
+}

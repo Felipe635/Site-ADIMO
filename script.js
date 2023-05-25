@@ -5,14 +5,39 @@ function logar(){
     var email = document.getElementById('email').value;
     var senha = document.getElementById('senha').value;
 
-if(email == "adm"){
-    alert("ADM entrou!");
+if(email == "adm@gmail.com" && senha == "123"){
+    alert("Administrador logado!")
     location.href = "adm.html"
 //abri a pagina do adm que tema atela de cadastro
+}else if(email == "" || senha == ""){
+    alert("Favor preencher todos os campos!");
+}else if(email == "adm@gmail.com" && senha != "123"){
+    alert("Credenciais inválidas!");
 }else{
-    alert("cliente entrou");
+    location.href = "index.html"
 }
 
+}
+
+function cadastrarVisita(){
+    var email = document.getElementById('email').value;
+    if(email == ""){
+        alert("Favor preencher todos os campos!");
+    }else{
+        alert("Visita cadastrada com sucesso!");
+        location.href = "adm.html"
+    }
+}
+
+function cadastrar(){
+    var email = document.getElementById('email').value;
+
+    if(email != ""){
+    alert("Cliente cadastrado com sucesso!");
+    location.href = "adm.html"
+    }else{
+        alert("Favor preencher todos os campos!");
+    }
 }
 
 function addFav2 (){

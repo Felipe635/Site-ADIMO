@@ -25,14 +25,14 @@
         <form method="POST" class="formLogin">
             <h1>Agendamento de Visita</h1>
             <label for="email">E-mail</label>
-            <input type="text" placeholder="Digite o e-mail" autofocus="true" id="email" />
+            <input type="text" placeholder="Digite o e-mail" autofocus="true" id="email" required/>
             <label for="password">Imóvel</label>
-            <input type="password" placeholder="Digite o imóvel a ser visitado" />
+            <input type="password" placeholder="Digite o imóvel a ser visitado" required/>
             <label for="data">Data da visita</label>
             <input type="date"/>
             <label for="data">Horário da visita</label>
             <input type="time"/>
-            <input type="submit" value="Acessar" class="btn" onclick="logar(); return false"/>
+            <input type="submit" value="Acessar" class="btn" onclick="cadastrarVisita(); return false"/>
         </form>
     </div>
 

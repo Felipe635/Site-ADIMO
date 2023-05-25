@@ -57,3 +57,23 @@ body{
     font-size: 1.7em;
     font-weight: bold;
 }
+
+@media screen and (max-width: 610px) {
+    .img-dir{
+        float: none;
+        margin-left: 70px;
+    }
+
+    .img-esq{
+        margin-left: 70px;
+        float: none;
+    }
+
+    .ul-sobre{
+        width: 85%;
+    }
+
+    .texto-esq{
+        width: 100%;
+    }
+}
