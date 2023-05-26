@@ -84,3 +84,11 @@ body {
     background-color: #6f6f6f;
     color: #fff;
 }
+
+@media screen and (max-width: 610px) {
+
+    .formLogin h1 {
+        font-weight: 500;
+        font-size: 1.5em;
+    }
+}
