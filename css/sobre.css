@@ -58,6 +58,7 @@ body{
     font-weight: bold;
 }
 
+
 @media screen and (max-width: 610px) {
     .img-dir{
         float: none;

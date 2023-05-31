@@ -49,7 +49,7 @@ body{
 }
 
 .meio{
-    width: 50%;
+    width: 60%;
     margin-left: auto;
     margin-right: auto;
 }
@@ -166,10 +166,6 @@ table td{
 
 .social a[href*="twitter.com"] {
     background-image: url(../img/twitter.png);
-}
-
-.social a[href*="instagram.com"] {
-    background-image: url(../img/instagram.png);
 }
 
 @media screen and (max-width: 610px) {
